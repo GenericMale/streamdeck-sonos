@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <title>Sonos Property Inspector</title>
+    <link rel="stylesheet" href="css/sdpi.css"/>
+
+    <style>
+        #settings > .sdpi-item {
+            display: none
+        }
+        #settings > .sdpi-item.active {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+<div class="sdpi-wrapper">
+
+    <form id="global-settings">
+        <div class="sdpi-item">
+            <div class="sdpi-item-label" data-localize>Speaker IP</div>
+            <input class="sdpi-item-value" name="host" type="text"/>
+        </div>
+
+        <div class="sdpi-item">
+            <details class="message info">
+                <summary data-localize>Obtaining Speaker IP Address</summary>
+                <h4 data-localize>Sonos Desktop App</h4>
+                <i data-localize>Help -> About My Sonos System...</i>
+                <h4 data-localize>Sonos Mobile App</h4>
+                <i data-localize>Settings -> System -> About My System</i>
+            </details>
+        </div>
+    </form>
+
+    <hr>
+
+    <form id="settings">
+        <div class="sdpi-item" data-actions="mute,playpause,repeat,shuffle">
+            <div class="sdpi-item-label" data-localize>Refresh Interval</div>
+            <input class="sdpi-item-value" name="refreshInterval" type="number" value="1"/>
+        </div>
+
+        <div class="sdpi-item" data-actions="volume">
+            <div class="sdpi-item-label" data-localize>Volume</div>
+            <input class="sdpi-item-value" name="volume" type="number" value="50"/>
+        </div>
+
+        <div class="sdpi-item" data-actions="volumeup">
+            <div class="sdpi-item-label" data-localize>Volume Increase</div>
+            <input class="sdpi-item-value" name="volume" type="number" value="10"/>
+        </div>
+
+        <div class="sdpi-item" data-actions="volumedown">
+            <div class="sdpi-item-label" data-localize>Volume Decrease</div>
+            <input class="sdpi-item-value" name="volume" type="number" value="10"/>
+        </div>
+
+        <div class="sdpi-item" data-actions="playuri">
+            <div class="sdpi-item-label" data-localize>URL</div>
+            <input class="sdpi-item-value" name="uri" type="text"/>
+        </div>
+
+        <div class="sdpi-item" data-actions="changesource">
+            <div class="sdpi-item-label" data-localize>Source</div>
+            <select class="sdpi-item-value select" name="source">
+                <option value="tv" data-localize>TV</option>
+                <option value="line_in" data-localize>Line In</option>
+                <option value="queue" data-localize selected>Sonos Queue</option>
+            </select>
+        </div>
+
+        <div class="sdpi-item" data-actions="playfavorites">
+            <div class="sdpi-item-label" data-localize>Favorite</div>
+            <select id="favorites" class="sdpi-item-value select" name="favorite">
+                <option value="" data-localize></option>
+            </select>
+        </div>
+
+        <div class="sdpi-item" type="checkbox" data-actions="playfavorites,playpause">
+            <label class="sdpi-item-label" data-localize>Album Art</label>
+            <div class="sdpi-item-value">
+                <div class="sdpi-item-child">
+                    <input id="checkbox_image" type="checkbox" name="showAlbumArt" value="1">
+                    <label for="checkbox_image" class="sdpi-item-label">
+                        <span></span>
+                        <label data-localize>Display on key</label>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="sdpi-item" type="checkbox" data-actions="playuri,changesource,playfavorites">
+            <label class="sdpi-item-label" data-localize>Play</label>
+            <div class="sdpi-item-value">
+                <div class="sdpi-item-child">
+                    <input id="checkbox_play" type="checkbox" name="play" value="1">
+                    <label for="checkbox_play" class="sdpi-item-label"><span></span></label>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Play / Pause Texts -->
+        <div class="sdpi-item" data-actions="playpause">
+            <div class="sdpi-item-label" data-localize>Top Text</div>
+            <select class="sdpi-item-value select" name="top">
+                <option value="" data-localize selected>None</option>
+                <option value="artist" data-localize>Artist</option>
+                <option value="title" data-localize>Title</option>
+                <option value="duration" data-localize>Duration</option>
+                <option value="elapsed" data-localize>Elapsed</option>
+                <option value="remaining" data-localize>Remaining</option>
+            </select>
+        </div>
+        <div class="sdpi-item" data-actions="playpause">
+            <div class="sdpi-item-label" data-localize>Middle Text</div>
+            <select class="sdpi-item-value select" name="middle">
+                <option value="" data-localize selected>None</option>
+                <option value="artist" data-localize>Artist</option>
+                <option value="title" data-localize>Title</option>
+                <option value="duration" data-localize>Duration</option>
+                <option value="elapsed" data-localize>Elapsed</option>
+                <option value="remaining" data-localize>Remaining</option>
+            </select>
+        </div>
+        <div class="sdpi-item" data-actions="playpause">
+            <div class="sdpi-item-label" data-localize>Bottom Text</div>
+            <select class="sdpi-item-value select" name="bottom">
+                <option value="" data-localize selected>None</option>
+                <option value="artist" data-localize>Artist</option>
+                <option value="title" data-localize>Title</option>
+                <option value="duration" data-localize>Duration</option>
+                <option value="elapsed" data-localize>Elapsed</option>
+                <option value="remaining" data-localize>Remaining</option>
+            </select>
+        </div>
+
+        <div class="sdpi-item" data-actions="playpause">
+            <div class="sdpi-item-label" data-localize>Paused Text</div>
+            <input class="sdpi-item-value" name="paused" type="text"/>
+        </div>
+
+        <div class="sdpi-item" data-actions="playuri">
+            <details class="message info">
+                <summary>Supported Music Services</summary>
+                <p title="https://open.spotify.com/playlist/37i9dQZEVXcQ9COmYvdajy">Spotify</p>
+                <p title="https://tidal.com/browse/playlist/915bb231-f7f6-4e3c-91a7-d7de0921cbc7">Tidal</p>
+                <p title="https://www.deezer.com/us/playlist/9181107482">Deezer</p>
+                <p title="https://music.apple.com/us/playlist/lossless-24-bit-192khz/pl.u-MDAWvpjt38370N">Apple Music</p>
+                <p title="https://tunein.com/radio/BBC-Radio-1-988-s24939/">TuneIn</p>
+            </details>
+        </div>
+    </form>
+</div>
+
+<script src="../stream-deck.js"></script>
+<script src="../sonos.js"></script>
+<script src="form-utils.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

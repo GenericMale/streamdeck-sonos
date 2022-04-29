@@ -1,0 +1,192 @@
+{
+  "SDKVersion": 2,
+  "Author": "GenericMale",
+  "CodePath": "plugin/index.html",
+  "Description": "Control your Sonos Speakers.",
+  "Name": "Sonos",
+  "Icon": "images/plugin_icon",
+  "URL": "https://github.com/GenericMale/streamdeck-spotify",
+  "Version": "1.0.0",
+  "Category": "Sonos",
+  "CategoryIcon": "images/plugin_category",
+  "PropertyInspectorPath": "pi/index.html",
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "10.11"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Software": {
+    "MinimumVersion": "4.1"
+  },
+  "Actions": [
+    {
+      "Icon": "images/playpause_action",
+      "Name": "Play / Pause",
+      "States": [
+        {
+          "Image": "images/paused_key",
+          "Name": "Paused",
+          "TitleColor": "#ffffff",
+          "FontFamily": "Arial",
+          "FontStyle": "Bold",
+          "FontSize": "10"
+        },
+        {
+          "Image": "images/playing_key",
+          "Name": "Playing",
+          "TitleColor": "#ffffff",
+          "FontFamily": "Arial",
+          "FontStyle": "Bold",
+          "FontSize": "10"
+        }
+      ],
+      "Tooltip": "Play and pause the audio and display playback info.",
+      "UUID": "com.genericmale.sonos.playpause"
+    },
+    {
+      "Icon": "images/previous_action",
+      "Name": "Previous Song",
+      "States": [
+        {
+          "Image": "images/previous_key"
+        }
+      ],
+      "Tooltip": "Go back to the previous song in queue.",
+      "UUID": "com.genericmale.sonos.previous"
+    },
+    {
+      "Icon": "images/next_action",
+      "Name": "Next Song",
+      "States": [
+        {
+          "Image": "images/next_key"
+        }
+      ],
+      "Tooltip": "Go to next song in queue.",
+      "UUID": "com.genericmale.sonos.next"
+    },
+    {
+      "Icon": "images/changesource_action",
+      "Name": "Change Source",
+      "States": [
+        {
+          "Image": "images/changesource_key"
+        }
+      ],
+      "Tooltip": "Change the playback source (TV, LineIn, Queue).",
+      "UUID": "com.genericmale.sonos.changesource"
+    },
+    {
+      "Icon": "images/playuri_action",
+      "Name": "Play URL",
+      "States": [
+        {
+          "Image": "images/playuri_key"
+        }
+      ],
+      "Tooltip": "Play a song, album, playlist or radio station with a URL from Spotify, TuneIn, Tidal, Deezer or Apple Music.",
+      "UUID": "com.genericmale.sonos.playuri"
+    },
+    {
+      "Icon": "images/playfavorites_action",
+      "Name": "Play Favorites",
+      "States": [
+        {
+          "Image": "images/playfavorites_key"
+        }
+      ],
+      "Tooltip": "Play one of the favorites added in the Sonos app.",
+      "UUID": "com.genericmale.sonos.playfavorites"
+    },
+    {
+      "Icon": "images/repeat_action",
+      "Name": "Repeat Mode",
+      "States": [
+        {
+          "Image": "images/repeat_none_key",
+          "Name": "No Repeat"
+        },
+        {
+          "Image": "images/repeat_all_key",
+          "Name": "Repeat All"
+        },
+        {
+          "Image": "images/repeat_one_key",
+          "Name": "Repeat Track"
+        }
+      ],
+      "Tooltip": "Toggle the repeat mode.",
+      "UUID": "com.genericmale.sonos.repeat"
+    },
+    {
+      "Icon": "images/shuffle_action",
+      "Name": "Shuffle Mode",
+      "States": [
+        {
+          "Image": "images/shuffle_off_key",
+          "Name": "No Shuffle"
+        },
+        {
+          "Image": "images/shuffle_on_key",
+          "Name": "Shuffle"
+        }
+      ],
+      "Tooltip": "Toggle the shuffle mode.",
+      "UUID": "com.genericmale.sonos.shuffle"
+    },
+    {
+      "Icon": "images/volumeup_action",
+      "Name": "Volume Up",
+      "States": [
+        {
+          "Image": "images/volumeup_key"
+        }
+      ],
+      "Tooltip": "Increase the volume.",
+      "UUID": "com.genericmale.sonos.volumeup"
+    },
+    {
+      "Icon": "images/volumedown_action",
+      "Name": "Volume Down",
+      "States": [
+        {
+          "Image": "images/volumedown_key"
+        }
+      ],
+      "Tooltip": "Decrease the volume.",
+      "UUID": "com.genericmale.sonos.volumedown"
+    },
+    {
+      "Icon": "images/mute_action",
+      "Name": "Volume Mute / Unmute",
+      "States": [
+        {
+          "Image": "images/unmuted_key",
+          "Name": "Unmuted"
+        },
+        {
+          "Image": "images/muted_key",
+          "Name": "Muted"
+        }
+      ],
+      "Tooltip": "Mute and unmute the audio.",
+      "UUID": "com.genericmale.sonos.mute"
+    },
+    {
+      "Icon": "images/volume_action",
+      "Name": "Volume Set",
+      "States": [
+        {
+          "Image": "images/volume_key"
+        }
+      ],
+      "Tooltip": "Change the volume to a fixed value.",
+      "UUID": "com.genericmale.sonos.volume"
+    }
+  ]
+}

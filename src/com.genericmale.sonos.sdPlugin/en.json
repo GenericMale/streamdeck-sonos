@@ -1,0 +1,85 @@
+{
+  "Description": "Control your Sonos Speakers.",
+  "Name": "Sonos",
+  "Category": "Sonos",
+  "Localization": {
+    "Speaker IP": "Speaker IP",
+    "Obtaining Speaker IP Address": "Obtaining Speaker IP Address",
+    "Sonos Desktop App": "Sonos Desktop App",
+    "Help -> About My Sonos System...": "Help -> About My Sonos System...",
+    "Sonos Mobile App": "Sonos Mobile App",
+    "Settings -> System -> About My System": "Settings -> System -> About My System",
+    "Refresh Interval": "Refresh Interval",
+    "Volume": "Volume",
+    "Volume Increase": "Volume Increase",
+    "Volume Decrease": "Volume Decrease",
+    "URL": "URL",
+    "Source": "Source",
+    "TV": "TV",
+    "Line In": "Line In",
+    "Sonos Queue": "Sonos Queue",
+    "Favorite": "Favorite",
+    "Album Art": "Album Art",
+    "Display on key": "Display on key",
+    "Play": "Play",
+    "Top Text": "Top Text",
+    "Middle Text": "Middle Text",
+    "Bottom Text": "Bottom Text",
+    "None": "None",
+    "Artist": "Artist",
+    "Title": "Title",
+    "Duration": "Duration",
+    "Elapsed": "Elapsed",
+    "Remaining": "Remaining",
+    "Paused Text": "Paused Text"
+  },
+
+  "com.genericmale.sonos.playpause": {
+    "Name": "Play / Pause",
+    "Tooltip": "Play and pause the audio and display playback info."
+  },
+  "com.genericmale.sonos.previous": {
+    "Name": "Previous Song",
+    "Tooltip": "Go back to the previous song in queue."
+  },
+  "com.genericmale.sonos.next": {
+    "Name": "Next Song",
+    "Tooltip": "Go to next song in queue."
+  },
+  "com.genericmale.sonos.changesource": {
+    "Name": "Change Source",
+    "Tooltip": "Change the playback source (TV, Line In, Queue)."
+  },
+  "com.genericmale.sonos.playuri": {
+    "Name": "Play URL",
+    "Tooltip": "Play a song, album, playlist or radio station with a URL from Spotify, TuneIn, Tidal, Deezer or Apple Music."
+  },
+  "com.genericmale.sonos.playfavorites": {
+    "Name": "Play Favorites",
+    "Tooltip": "Play one of the favorites added in the Sonos app."
+  },
+  "com.genericmale.sonos.repeat": {
+    "Name": "Repeat Mode",
+    "Tooltip": "Toggle the repeat mode."
+  },
+  "com.genericmale.sonos.shuffle": {
+    "Name": "Shuffle Mode",
+    "Tooltip": "Toggle the shuffle mode."
+  },
+  "com.genericmale.sonos.volumeup": {
+    "Name": "Volume Up",
+    "Tooltip": "Increase the volume."
+  },
+  "com.genericmale.sonos.volumedown": {
+    "Name": "Volume Down",
+    "Tooltip": "Decrease the volume."
+  },
+  "com.genericmale.sonos.mute": {
+    "Name": "Volume Mute / Unmute",
+    "Tooltip": "Mute and unmute the audio."
+  },
+  "com.genericmale.sonos.volume": {
+    "Name": "Volume Set",
+    "Tooltip": "Change the volume to a fixed value."
+  }
+}

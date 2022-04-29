@@ -1,0 +1,85 @@
+{
+  "Description": "Steuere deine Sonos Lautsprecher.",
+  "Name": "Sonos",
+  "Category": "Sonos",
+  "Localization": {
+    "Speaker IP": "Lautsprecher IP",
+    "Obtaining Speaker IP Address": "Lautsprecher IP feststellen",
+    "Sonos Desktop App": "Sonos Desktop App",
+    "Help -> About My Sonos System...": "Hilfe -> Über mein Sonos System...",
+    "Sonos Mobile App": "Sonos Handy App",
+    "Settings -> System -> About My System": "Einstellungen -> System -> Über mein System",
+    "Refresh Interval": "Intervall",
+    "Volume": "Lautstärke",
+    "Volume Increase": "Lautstärke Erhöhen",
+    "Volume Decrease": "Lautstärke Verringern",
+    "URL": "URL",
+    "Source": "Quelle",
+    "TV": "TV",
+    "Line In": "Line In",
+    "Sonos Queue": "Sonos Warteschlange",
+    "Favorite": "Favorit",
+    "Album Art": "Album",
+    "Display on key": "Auf Taste zeigen",
+    "Play": "Abspielen",
+    "Top Text": "Text Oben",
+    "Middle Text": "Text Mitte",
+    "Bottom Text": "Text Unten",
+    "None": "Nichts",
+    "Artist": "Künstler",
+    "Title": "Titel",
+    "Duration": "Dauer",
+    "Elapsed": "Vergangen",
+    "Remaining": "Verbleibend",
+    "Paused Text": "Pausieren Text"
+  },
+
+  "com.genericmale.sonos.playpause": {
+    "Name": "Abspielen / Stoppen",
+    "Tooltip": "Wiedergabe starten / stoppen und Wiedergabeinformationen anzeigen."
+  },
+  "com.genericmale.sonos.previous": {
+    "Name": "Zurück",
+    "Tooltip": "Zum vorherigen Lied in der Wartscheschlange springen."
+  },
+  "com.genericmale.sonos.next": {
+    "Name": "Weiter",
+    "Tooltip": "Zum nächsten Lied in der Wartscheschlange springen."
+  },
+  "com.genericmale.sonos.changesource": {
+    "Name": "Quelle ändern",
+    "Tooltip": "Die Wiedergabequelle (TV, Line In, Warteschlange) ändern."
+  },
+  "com.genericmale.sonos.playuri": {
+    "Name": "URL wiedergeben",
+    "Tooltip": "Ein Lied, Album, Playlist oder Radio Station mit einer URL von Spotify, TuneIn, Tidal, Deezer oder Apple Music abspielen."
+  },
+  "com.genericmale.sonos.playfavorites": {
+    "Name": "Favoriten wiedergeben",
+    "Tooltip": "Play one of the favorites added in the Sonos app."
+  },
+  "com.genericmale.sonos.repeat": {
+    "Name": "Wiederholungsmodus",
+    "Tooltip": "Den Wiederholungsmodus umschalten."
+  },
+  "com.genericmale.sonos.shuffle": {
+    "Name": "Zufällige Wiedergabe",
+    "Tooltip": "Die zufällige Wiedergabe umschalten."
+  },
+  "com.genericmale.sonos.volumeup": {
+    "Name": "Lautstärke erhöhen",
+    "Tooltip": "Die Lautstärke erhöhen."
+  },
+  "com.genericmale.sonos.volumedown": {
+    "Name": "Lautstärke verringern",
+    "Tooltip": "Die Lautstärke verringern."
+  },
+  "com.genericmale.sonos.mute": {
+    "Name": "Stummschalten",
+    "Tooltip": "Die Stummschaltung des Tons umschalten."
+  },
+  "com.genericmale.sonos.volume": {
+    "Name": "Lautstärke setzen",
+    "Tooltip": "Die Lautstärke auf einen fixen Wert ändern."
+  }
+}
