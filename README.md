@@ -15,7 +15,6 @@ Plugin which allows to control `Sonos` speakers and get live feedback.
 - Change Volume
 
 # Limitations
-
 The plugin is written in JavaScript which makes it Cross-Platform compatible and can be trusted to not perform anything dangerous.  
 
 However, this also comes with some limitations:
@@ -30,3 +29,14 @@ The plugin has to poll for status changes.
 Download the plugin from the [Releases](https://github.com/GenericMale/streamdeck-sonos/releases/) section.
 
 If you double-click the `com.genericmale.sonos.streamDeckPlugin` file on your machine, Stream Deck will install the plugin.
+
+# Development
+To generate the installation package, download the DistributionTool from the 
+[Elgato Developer Documentation](https://developer.elgato.com/documentation/stream-deck/sdk/packaging/)
+and run it in the project root folder:
+```
+.\DistributionTool.exe -b -i src\com.genericmale.sonos.sdPlugin -o release
+```
+
+A simple [bash script](generateImages.sh) is provided to generate all the images.  
+The script requires ImageMagick to be installed and uses the [Material Design Icons](https://github.com/marella/material-design-icons).

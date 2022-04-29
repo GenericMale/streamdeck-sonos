@@ -4,7 +4,7 @@
   "CodePath": "plugin/index.html",
   "Description": "Control your Sonos Speakers.",
   "Name": "Sonos",
-  "Icon": "images/plugin_icon",
+  "Icon": "sonos",
   "URL": "https://github.com/GenericMale/streamdeck-spotify",
   "Version": "1.0.0",
   "Category": "Sonos",
