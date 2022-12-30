@@ -5,7 +5,7 @@
   "Description": "Control your Sonos Speakers.",
   "Name": "Sonos",
   "Icon": "sonos",
-  "URL": "https://github.com/GenericMale/streamdeck-spotify",
+  "URL": "https://github.com/GenericMale/streamdeck-sonos",
   "Version": "1.0.0",
   "Category": "Sonos",
   "CategoryIcon": "images/plugin_category",
