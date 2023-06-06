@@ -178,6 +178,28 @@
       "UUID": "com.genericmale.sonos.mute"
     },
     {
+      "Icon": "images/volumecontrol_action",
+      "Name": "Adjust volume",
+      "States": [
+        {
+          "Image": "images/volume_action"
+        }
+      ],
+      "Controllers": [
+        "Encoder"
+      ],
+      "Encoder": {
+        "Icon": "images/volume_action",
+        "layout": "$B1",
+        "TriggerDescription": {
+          "Rotate": "Adjust volume",
+          "Push": "Mute on/off"
+        }
+      },
+      "Tooltip": "Adjust the volume of your Sonos.",
+      "UUID": "com.genericmale.sonos.adjustvolume"
+    },
+    {
       "Icon": "images/volume_action",
       "Name": "Volume Set",
       "States": [

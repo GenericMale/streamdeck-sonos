@@ -88,6 +88,9 @@ action shuffle shuffle
 key shuffle shuffle_off
 key shuffle_on shuffle_on
 
+action adjustvolume adjustvolume
+encoder adjustvolume adjustvolume
+
 action volume_up volume
 key volume_up volume
 

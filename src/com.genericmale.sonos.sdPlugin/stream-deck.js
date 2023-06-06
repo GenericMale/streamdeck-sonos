@@ -2,6 +2,8 @@
  * @class StreamDeck
  * StreamDeck object containing all required code to establish
  * communication with SD-Software and the Property Inspector
+ * 
+ *  UPDATE 1: updated with events to support StreamDeck+ (dialDown, dialRotate, dialUp, touchTap)
  */
 class StreamDeck {
     port;
@@ -410,9 +412,13 @@ class Action {
         this.context = context;
 
         //action events
+        this.streamDeck.en(`${this.action}.dialDown`, (event) => this.onDialDown(event));
+        this.streamDeck.en(`${this.action}.dialRotate`, (event) => this.onDialRotate(event));
+        this.streamDeck.en(`${this.action}.dialUp`, (event) => this.onDialUp(event));
         this.streamDeck.on(`${this.action}.didReceiveSettings`, (event) => this.onDidReceiveSettings(event));
         this.streamDeck.on(`${this.action}.keyDown`, (event) => this.onKeyDown(event));
         this.streamDeck.on(`${this.action}.keyUp`, (event) => this.onKeyUp(event));
+        this.streamDeck.en(`${this.action}.touchTap`, (event) => this.onTouchTap(event));
         this.streamDeck.on(`${this.action}.willAppear`, (event) => this.onWillAppear(event));
         this.streamDeck.on(`${this.action}.willDisappear`, (event) => this.onWillDisappear(event));
         this.streamDeck.on(`${this.action}.titleParametersDidChange`, (event) => this.onTitleParametersDidChange(event));
@@ -429,6 +435,24 @@ class Action {
             .onApplicationDidLaunch((event) => this.onApplicationDidLaunch(event))
             .onApplicationDidTerminate((event) => this.onApplicationDidTerminate(event))
             .onSystemDidWakeUp((event) => this.onSystemDidWakeUp(event));
+    }
+
+    /**
+     * Callback function for the dialDown event, which fires when pushing a knob in
+     */
+    async onDialDown(event) {
+    }
+
+    /**
+     * Callback function for the dialRotate event, which fires when twisting a knob
+     */
+    async onDialRotate(event) {
+    }
+
+    /**
+     * Callback function for the dialUp event, which fires when releasing a knob after pushing the knob in
+     */
+    async onDialUp(event) {
     }
 
     /**
@@ -453,6 +477,12 @@ class Action {
      * Callback function for the keyUp event, which fires when releasing a key
      */
     async onKeyUp(event) {
+    }
+
+    /**
+     * Callback function for the touchTap event, which fires when touching or tapping the display on the SD+
+     */
+    async onTouchTap(event) {
     }
 
     /**
