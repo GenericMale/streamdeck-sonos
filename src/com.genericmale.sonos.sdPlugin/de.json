@@ -62,6 +62,10 @@
     "Name": "Wiederholungsmodus",
     "Tooltip": "Den Wiederholungsmodus umschalten."
   },
+  "com.genericmale.sonos.adjustvolume": {
+    "Name": "Lautstärke anpassen",
+    "Tooltip": "Lautstärke dynamisch anpassen (über einen Knopf)."
+  },
   "com.genericmale.sonos.shuffle": {
     "Name": "Zufällige Wiedergabe",
     "Tooltip": "Die zufällige Wiedergabe umschalten."

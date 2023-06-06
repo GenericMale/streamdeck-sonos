@@ -62,6 +62,10 @@
     "Name": "Repeat Mode",
     "Tooltip": "Toggle the repeat mode."
   },
+    "com.genericmale.sonos.adjustvolume": {
+    "Name": "Adjust volume",
+    "Tooltip": "Dynamically adjust volume (via a knob)."
+  },
   "com.genericmale.sonos.shuffle": {
     "Name": "Shuffle Mode",
     "Tooltip": "Toggle the shuffle mode."
